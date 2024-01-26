@@ -25,13 +25,13 @@ if support[exploit()]  then
 spawn(function()
 		pcall(function()
 		hookfunction(print, function(...)
-			game.Players.LocalPlayer:Kick("Anti Http Spy By MTien Hub")
+			game.Players.LocalPlayer:Kick("Anti Http Spy By An Hub")
 			game:Shutdown()
 			while true do end
 			return
 		end)
 		hookfunction(warn, function(...)
-			game.Players.LocalPlayer:Kick("Anti Http Spy By MTien Hub")
+			game.Players.LocalPlayer:Kick("Anti Http Spy By An Hub")
 			game:Shutdown()
 			while true do end
 			return
@@ -46,21 +46,21 @@ spawn(function()
 		
 	hookfunction(print, function(a)
 		if string.find(a:lower(), "http") then
-			game.Players.LocalPlayer:Kick("Anti Http Spy By MTien Hub")
+			game.Players.LocalPlayer:Kick("Anti Http Spy By An Hub")
 			game:Shutdown()
 			while true do end
 		end
 	end)
 	hookfunction(warn, function(a)
 		if string.find(a:lower(), "http") then
-			game.Players.LocalPlayer:Kick("Anti Http Spy By MTien Hub")
+			game.Players.LocalPlayer:Kick("Anti Http Spy By An Hub)
 			game:Shutdown()
 			while true do end
 		end
 	end)
 	hookfunction(error, function(a)
 		if string.find(a:lower(), "http") then
-			game.Players.LocalPlayer:Kick("Anti Http Spy By MTien Hub")
+			game.Players.LocalPlayer:Kick("Anti Http Spy By An Hub
 			game:Shutdown()
 			while true do end
 		end
@@ -69,7 +69,7 @@ spawn(function()
 		 local oldwrite
 			oldwrite = hookfunction(writefile, function(file, content)
 				if(string.find(string.lower(content), 'http') or string.find(string.lower(content), '//') or string.find(string.lower(content), 'https://discord.com/api/webhooks/')) then
-					game.Players.LocalPlayer:Kick("Anti Http Spy By MTien Hub")
+					game.Players.LocalPlayer:Kick("Anti Http Spy By An Hub")
 					game:Shutdown()
 					while true do end
 					return
@@ -80,7 +80,7 @@ spawn(function()
 			local oldappend
 			oldappend = hookfunction(appendfile, function(file, content)
 				if(string.find(string.lower(content), 'http') or string.find(string.lower(content), '//') or string.find(string.lower(content), 'https://discord.com/api/webhooks/')) then
-					game.Players.LocalPlayer:Kick("Anti Http Spy By MTien Hub")
+					game.Players.LocalPlayer:Kick("Anti Http Spy By An Hub")
 					game:Shutdown()
 					while true do end
 					return
@@ -105,7 +105,7 @@ spawn(function()
 			getgenv().clonefunction = function(...) while true do end return end
 			game.CoreGui.ChildAdded:Connect(function(c)
 				if(string.lower(c.Name) == 'devconsolemaster') then
-					game.Players.LocalPlayer:Kick("Anti Http Spy By MTien Hub")
+					game.Players.LocalPlayer:Kick("Anti Http Spy By An Hub")
 					game:Shutdown()
 					while true do end
 					c:Destroy()
@@ -115,43 +115,43 @@ spawn(function()
 			oldNamecall = hookmetamethod(game, '__namecall', newcclosure(function(self, ...)
 				local method = getnamecallmethod()
 				if(string.lower(method) == 'rconsoleprint') then
-					game.Players.LocalPlayer:Kick("Anti Http Spy By MTien Hub")
+					game.Players.LocalPlayer:Kick("Anti Http Spy By An Hub")
 					game:Shutdown()
 					while true do end
 					return 
 				end
 				if(string.lower(method) == 'rconsoleinfo') then
-					game.Players.LocalPlayer:Kick("Anti Http Spy By MTien Hub")
+					game.Players.LocalPlayer:Kick("Anti Http Spy By An Hub")
 					game:Shutdown()
 					while true do end
 					return 
 				end
 				if(string.lower(method) == 'rconsolewarn') then
-					game.Players.LocalPlayer:Kick("Anti Http Spy By MTien Hub")
+					game.Players.LocalPlayer:Kick("Anti Http Spy By An Hub")
 					game:Shutdown()
 					while true do end
 					return 
 				end
 				if(string.lower(method) == 'rconsoleerr') then
-					game.Players.LocalPlayer:Kick("Anti Http Spy By MTien Hub")
+					game.Players.LocalPlayer:Kick("Anti Http Spy By An Hub")
 					game:Shutdown()
 					while true do end
 					return
 				end
 				if(string.lower(method) == 'warn') then
-					game.Players.LocalPlayer:Kick("Anti Http Spy By MTien Hub")
+					game.Players.LocalPlayer:Kick("Anti Http Spy By An Hub")
 					game:Shutdown()
 					while true do end
 					return
 				end
 				if(string.lower(method) == 'error') then
-					game.Players.LocalPlayer:Kick("Anti Http Spy By MTien Hub")
+					game.Players.LocalPlayer:Kick("Anti Http Spy By An Hub")
 					game:Shutdown()
 					while true do end
 					return
 				end
 				if(string.lower(method) == 'rendernametag') then
-					game.Players.LocalPlayer:Kick("Anti Http Spy By MTien Hub")
+					game.Players.LocalPlayer:Kick("Anti Http Spy By An Hub")
 					game:Shutdown()
 					while true do end
 					return 
@@ -263,7 +263,7 @@ spawn(function()
 end)
 print("Anti Cheat Bypass Active")
 notis.new("<Color=Red>Script Đã Có Bypass Anti Cheat, Còn Bị Reset Là Do Bạn\n Dùng Rất Nhiều Script Khác, Không Phải Tại MTien\n Nhé Cảm Ơn Đã Sử Dụng<Color=/>"):Display()
-print("Made By: Nguyen Minh Tien")
+print("Made By: An Hub")
 warn("Định Deobf À Bé Yêu?")
 warn("Deobf Làm Gì:3")
 print("Anh Yêu Bé Mà Cứ Dms Xin Là Anh Cho:33")
@@ -450,7 +450,7 @@ function Update:Window(text,logo,keybind)
     UserText.TextColor3 = Color3.fromRGB(255, 255, 255)
     UserText.Size = UDim2.new(0, 80, 0, 25)
     UserText.Font = Enum.Font.SourceSansBold
-    UserText.Text = "APPLE HUB"
+    UserText.Text = "An Hub"
     UserText.TextScaled = true
     UserText.TextSize = 17.000
     UserText.TextWrapped = true
